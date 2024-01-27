@@ -189,7 +189,7 @@ public class Runigram {
 	 * of the source image.
 	 */
 	public static void morph(Color[][] source, Color[][] target, int n) {
-		target = scaled(target, source[0].length, source.length);
+		target = scaled(target, source.length, source[0].length);
         setCanvas(source);
         for (int i = 0; i <= n; i++) {
             double alpha = (double)(n - i) / n;
